@@ -91,12 +91,6 @@ python src/03_calculate_risk.py
 ```
 
 Raw data used:
-- `data/raw/clinvar_result.txt` — ClinVar export (fill in access date)
-- gnomAD SAS allele frequencies added by hand during the manual annotation step (fill in gnomAD version/date)
+- `data/raw/clinvar_result.txt` — ClinVar export 
+- gnomAD SAS allele frequencies added by hand during the manual annotation step
 
-## Future Improvements
-
-- Model compound heterozygosity explicitly using gene-level pathogenic allele frequency.
-- Break down carrier frequency contribution by variant type (point mutation vs. indel vs. large deletion) and by ClinVar review status/confidence.
-- Incorporate country- or ethnicity-level gnomAD subpopulation data where available, rather than aggregate SAS.
-- Visualize allele frequency contribution per variant as a bar chart.
