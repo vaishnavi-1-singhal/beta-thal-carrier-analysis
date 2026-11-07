@@ -68,19 +68,6 @@ This project's estimate (~1.95%) is **lower than the published range**, which is
 - **Data source scope**: results reflect only variants classified as pathogenic/likely pathogenic in ClinVar at the time of access, and only frequencies available in gnomAD SAS; variants absent from either database are not represented.
 - **No regional resolution**: gnomAD SAS aggregates multiple South Asian countries/ethnic groups, which have meaningfully different carrier rates (e.g., northern Pakistan vs. broader national estimates). This analysis cannot resolve sub-regional variation.
 
-## How to Reproduce
-
-```bash
-git clone <repo-url>
-cd beta-thal-carrier-analysis
-pip install -r requirements.txt
-python src/01_clean_clinvar.py
-# manually annotate data/manual/hbb_variants_clean.tsv with gnomAD SAS
-# allele frequencies and Status, save as data/manual/hbb_variants_annotated.tsv
-python src/02_build_tracker.py
-python src/03_calculate_risk.py
-```
-
 Raw data used:
 - `data/raw/clinvar_result.txt` — ClinVar export 
 - gnomAD SAS allele frequencies added by hand during the manual annotation step
