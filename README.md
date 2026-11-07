@@ -11,7 +11,6 @@ Beta-thalassemia is an autosomal recessive blood disorder caused by mutations in
 - **ClinVar** — pathogenic and likely pathogenic *HBB* variants associated with beta-thalassemia, including variant name, protein change, accession/variation ID, genomic location, variant type, molecular consequence, and germline classification.
 - **gnomAD (South Asian / SAS subpopulation)** — allele frequency for each variant, matched to the corresponding ClinVar entry. Allele frequency is the key input to the Hardy-Weinberg calculation below.
 
-> Note: exact ClinVar and gnomAD access/version dates should be filled in here for full reproducibility — see "How to Reproduce" below.
 
 ## Method
 
