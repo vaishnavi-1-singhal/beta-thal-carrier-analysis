@@ -46,14 +46,6 @@ src/
 3. **`src/02_build_tracker.py`** — reads the manually annotated file and restructures it into a clean working tracker (variant ID, allele ID, rsID, genomic location, name, allele frequency, mapping status, notes) at `data/processed/hbb_variants_tracker.tsv`.
 4. **`src/03_calculate_risk.py`** — computes per-variant carrier and disease frequency, sums across all variants, prints the overall carrier frequency and disease prevalence, and writes full per-variant results to `data/processed/hbb_risk_analysis.tsv`.
 
-Run in order, from the project root:
-```bash
-python src/01_clean_clinvar.py
-# --- manual step here: annotate and save data/manual/hbb_variants_annotated.tsv ---
-python src/02_build_tracker.py
-python src/03_calculate_risk.py
-```
-
 ## Results
 
 | Metric | Value |
